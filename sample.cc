@@ -20,7 +20,7 @@ fin.open("sums.txt");
 while ( fin >> a ) {
 sum += (a-mean) * (a-mean);
 }
-double variance = sum/(n-1);
+double variance = sum/n;
 std::cout << variance << std::endl;
 fin.close();
 double std = sqrt(variance);
