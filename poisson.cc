@@ -25,7 +25,7 @@ int main(){
     std::cout << "mean:" << mean << std::endl;
     for(unsigned int k = 0; k < counts.size(); ++ k ){
         std :: cout << k << ":" << counts [k] << std::endl;
-        fout << k << " " << counts[k] << " "  << n*poisson(mean, k) << std::endl;
+        fout << k << " " << counts[k] << " "  << n*poisson(mean, k) << " " << sqrt(n*poisson(mean, k)) << std::endl;
     }
     fin.close();
     fout.close();
