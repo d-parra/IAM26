@@ -68,7 +68,7 @@ int main(){
     {
         fout << i << " " << prob(data, i) << std::endl;
         fout2 << i << " " << -2*nll(data, i) << std::endl;
-        fout3 << i << " " << -2*nll(data, mean) + 2*nll(data, i) << std::endl;
+        fout3 << i << " " << -2*nll(data, i) + 2*nll(data, mean) << std::endl;
     }
     fin.close();
     fout.close();
